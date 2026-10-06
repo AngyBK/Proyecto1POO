@@ -1,0 +1,4 @@
+3,Perro,2000
+2,Gaseosa,5000
+6,jugo,200
+5,Combo,22000

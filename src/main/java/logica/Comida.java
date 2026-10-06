@@ -4,22 +4,22 @@ import java.util.ArrayList;
 
 public class Comida extends Producto {
 	
-	private ArrayList<Ingredientes> ingredientes;
+	private ArrayList<Ingrediente> ingredientes;
 	
 	public Comida(int codigo, String nombre, int precio) {
 		super(codigo, nombre, precio);
-		this.ingredientes = new ArrayList<Ingredientes>();
+		this.ingredientes = new ArrayList<Ingrediente>();
 	}
 	
-	public ArrayList<Ingredientes> getIngredientes() {
+	public ArrayList<Ingrediente> getIngredientes() {
 		return ingredientes;
 	}
 	
-	public void setIngredientes(ArrayList<Ingredientes> ingredientes) {
+	public void setIngredientes(ArrayList<Ingrediente> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
 	
-	public void agregarIngrediente(Ingredientes ingrediente) {
+	public void agregarIngrediente(Ingrediente ingrediente) {
 		this.ingredientes.add(ingrediente);
 	}
 	
@@ -27,7 +27,7 @@ public class Comida extends Producto {
 	public String toString() {
 		String mensaje = super.toString() + "\n";
 		
-		for(Ingredientes ingrediente : this.ingredientes) {
+		for(Ingrediente ingrediente : this.ingredientes) {
 			mensaje += "\t" + ingrediente + "\n";
 		}
 		
